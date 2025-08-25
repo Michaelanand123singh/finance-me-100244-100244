@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceMe - Financial Literacy for Students</title>
+    <meta name="description"
+        content="FinanceMe: Empowering school students with essential financial literacy skills for a brighter future. Learn about budgeting, saving, and investing.">
+    <meta property="og:title" content="FinanceMe - Financial Literacy for Students">
+    <meta property="og:description"
+        content="FinanceMe: Empowering school students with essential financial literacy skills for a brighter future. Learn about budgeting, saving, and investing.">
+    <meta property="og:image" content="/uploads/logo_1755719088.png">
+    <meta property="og:url" content="https://financeme.example.com">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366F1', // Indigo-500
+                        secondary: '#A855F7', // Purple-500
+                        accent: '#3B82F6', // Blue-500
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FinanceMe",
+  "url": "https://financeme.example.com",
+  "logo": "https://financeme.example.com/uploads/logo_1755719088.png",
+  "description": "Empowering students with financial literacy skills.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Main St",
+    "addressLocality": "Anytown",
+    "addressRegion": "CA",
+    "postalCode": "91234",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-555-123-4567",
+    "contactType": "customer service"
+  },
+  "sameAs": [
+    "https://www.facebook.com/FinanceMe",
+    "https://twitter.com/FinanceMe",
+    "https://www.linkedin.com/company/FinanceMe"
+  ]
+}
+</script>
+</head>
+
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Sticky Navigation Header -->
+    <header role="banner" class="bg-white shadow-md sticky top-0 z-50">
+        <nav role="navigation" aria-label="Main Navigation">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center">
+                        <a href="/" aria-label="FinanceMe Homepage">
+                            <img src="/uploads/logo_1755719088.png" alt="FinanceMe Logo" class="h-10 w-auto mr-3">
+                        </a>
+                        <a href="/" class="text-2xl font-bold text-gray-900 hover:text-primary transition-colors">
+                            FinanceMe
+                        </a>
+                    </div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About Us</a>
+                        <a href="#features" class="text-gray-700 hover:text-primary transition-colors">Features</a>
+                        <a href="#benefits" class="text-gray-700 hover:text-primary transition-colors">Benefits</a>
+                        <a href="#faq" class="text-gray-700 hover:text-primary transition-colors">FAQ</a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                    </div>
+                    <a href="#cta"
+                        class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-indigo-600 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">
+                        Get Started
+                    </a>
+                    <button class="md:hidden text-gray-500 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400" aria-label="Open Menu" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-br from-blue-100 to-purple-50 py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <img src="/uploads/logo_1755719088.png" alt="FinanceMe Logo" class="h-10 w-auto mx-auto mb-8">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
+                Unlock Your Financial Future
+            </h1>
+            <p class="text-lg text-gray-700 mb-8">
+                Learn essential financial skills from a young age. FinanceMe makes learning about money fun and
+                accessible for all students.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#cta"
+                    class="bg-primary hover:bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">
+                    Start Learning
+                </a>
+                <a href="#about"
+                    class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-lg font-semibold transition-colors border border-primary focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Badges -->
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center items-center space-x-8">
+                <img src="https://via.placeholder.com/100x40" alt="Badge 1" class="h-10 w-auto">
+                <img src="https://via.placeholder.com/100x40" alt="Badge 2" class="h-10 w-auto">
+                <img src="https://via.placeholder.com/100x40" alt="Badge 3" class="h-10 w-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <i class="fas fa-chart-line text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Interactive Lessons</h3>
+                    <p class="text-gray-700">Engaging and interactive lessons designed to make learning about finance
+                        fun and easy for students of all ages.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <i class="fas fa-piggy-bank text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Budgeting Tools</h3>
+                    <p class="text-gray-700">Practical budgeting tools that help students track their income and
+                        expenses, learn to save, and set financial goals.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <i class="fas fa-graduation-cap text-3xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Expert Guidance</h3>
+                    <p class="text-gray-700">Access to expert guidance and resources from financial professionals to
+                        help students make informed decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Benefits of FinanceMe</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <img src="https://via.placeholder.com/600x400" alt="Benefit 1"
+                        class="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Empowering Financial Independence</h3>
+                    <p class="text-gray-700 mb-6">FinanceMe equips students with the knowledge and skills they need to
+                        manage their finances responsibly and make informed decisions, setting them on the path to
+                        financial independence.</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Learn essential financial concepts</li>
+                        <li>Develop budgeting and saving habits</li>
+                        <li>Understand the importance of investing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use-Case Cards -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">How FinanceMe Helps</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Saving for College</h3>
+                    <p class="text-gray-700">Learn how to save money for college expenses through smart budgeting and
+                        investment strategies.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Managing Allowance</h3>
+                    <p class="text-gray-700">Develop effective strategies for managing allowance and making informed
+                        spending decisions.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Understanding Credit</h3>
+                    <p class="text-gray-700">Gain a foundational understanding of credit and how it impacts your
+                        financial future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider (Static HTML) -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">What Students Are Saying</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial text-center">
+                    <p class="text-xl italic text-gray-700 mb-4">"FinanceMe has helped me understand how to save money
+                        and make smart financial decisions. I feel much more confident about my financial future!"</p>
+                    <p class="font-semibold text-gray-900">- Sarah J., High School Student</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq" class="py-16">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <button class="w-full text-left focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-900">What age group is FinanceMe designed
+                                for?</h3>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
+                        </div>
+                    </button>
+                    <div class="mt-2 text-gray-700">FinanceMe is designed for students of all ages, from elementary
+                        school to high school.</div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <button class="w-full text-left focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-900">Is FinanceMe free to use?</h3>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
+                        </div>
+                    </button>
+                    <div class="mt-2 text-gray-700">Yes, FinanceMe offers a free plan with access to basic financial
+                        literacy lessons and tools. We also offer premium plans with advanced features and expert
+                        guidance.</div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <button class="w-full text-left focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-900">How does FinanceMe help students?</h3>
+                            <i class="fas fa-chevron-down text-gray-500"></i>
+                        </div>
+                    </button>
+                    <div class="mt-2 text-gray-700">FinanceMe helps students develop essential financial skills, such
+                        as budgeting, saving, and investing, through interactive lessons, practical tools, and expert
+                        guidance.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="cta" class="py-20 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Take Control of Your Financial Future?</h2>
+            <p class="text-xl text-indigo-100 mb-8">Start learning today with FinanceMe and unlock the power of
+                financial literacy.</p>
+            <a href="#contact"
+                class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">
+                Get Started
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Contact Us</h2>
+            <form class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                        placeholder="Your name">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                        placeholder="your@email.com">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                    <textarea rows="4" id="message" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                        placeholder="Your message"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-primary hover:bg-indigo-600 text-white py-3 rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-75">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer with Links -->
+    <footer class="bg-gray-900 text-white py-12" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">FinanceMe</h3>
+                    <p class="text-gray-400">Empowering students with essential financial literacy skills for a
+                        brighter future.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white">Benefits</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#faq" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Facebook</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 FinanceMe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation (Optional, requires JavaScript for toggle functionality) -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-50 hidden">
+        <div class="px-6 py-8">
+            <div class="flex justify-between items-center mb-6">
+                <a href="/" aria-label="FinanceMe Homepage">
+                    <img src="/uploads/logo_1755719088.png" alt="FinanceMe Logo" class="h-10 w-auto">
+                </a>
+                <button id="close-menu" class="text-gray-500 hover:text-gray-800 focus:outline-none">
+                    <i class="fas fa-times fa-2x"></i>
+                </button>
+            </div>
+            <div class="space-y-4">
+                <a href="#about" class="block text-gray-700 hover:text-primary transition-colors py-2">About Us</a>
+                <a href="#features" class="block text-gray-700 hover:text-primary transition-colors py-2">Features</a>
+                <a href="#benefits" class="block text-gray-700 hover:text-primary transition-colors py-2">Benefits</a>
+                <a href="#faq" class="block text-gray-700 hover:text-primary transition-colors py-2">FAQ</a>
+                <a href="#contact" class="block text-gray-700 hover:text-primary transition-colors py-2">Contact</a>
+                <a href="#cta"
+                    class="block bg-primary hover:bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const openMenuButton = document.querySelector('header button[aria-label="Open Menu"]');
+            const closeMenuButton = document.getElementById('close-menu');
+
+            if (openMenuButton && closeMenuButton && mobileMenu) {
+                openMenuButton.addEventListener('click', function () {
+                    mobileMenu.classList.remove('hidden');
+                });
+
+                closeMenuButton.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
